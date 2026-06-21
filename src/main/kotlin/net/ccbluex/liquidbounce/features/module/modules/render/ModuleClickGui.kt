@@ -49,7 +49,7 @@ import org.lwjgl.glfw.GLFW
  */
 
 object ModuleClickGui :
-    ClientModule("ClickGUI", ModuleCategories.RENDER, bind = GLFW.GLFW_KEY_RIGHT_SHIFT, disableActivation = true) {
+    ClientModule("ClickGUI", ModuleCategories.RENDER, bind = GLFW.GLFW_KEY_BACKSLASH, disableActivation = true) {
 
     override val running get() = true
 
