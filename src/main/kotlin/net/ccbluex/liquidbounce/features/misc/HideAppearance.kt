@@ -71,7 +71,8 @@ object HideAppearance : EventListener {
 
     private val shiftChronometer = Chronometer()
 
-    var isHidingNow = env("LB_UI_HIDE", "net.ccbluex.liquidbounce.ui.hide")?.toBoolean() ?: false
+    // Force hide the custom UI by default. Previously this read an environment variable.
+    var isHidingNow = true
         set(value) {
             field = value
             mc.schedule(::updateClient)
